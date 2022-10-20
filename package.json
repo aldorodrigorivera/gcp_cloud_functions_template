@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start":"npx @google-cloud/functions-framework --target=notification",
+    "deploy":"gcloud functions deploy TestingDevelop  --project=templatetestingdevelop --region=us-central1 --runtime=nodejs16 --source=. --entry-point=notification --trigger-http",
+    "list:projects":"gcloud project list",
+    "set:project":"gcloud config set project "
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.1.2"
+  }
+}
